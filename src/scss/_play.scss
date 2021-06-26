@@ -1,0 +1,184 @@
+@import './mixins';
+
+.play{
+
+    width: 100%;
+    position: relative;
+    margin-top: 1.125rem;
+    display: flex;
+    flex-direction: column;
+
+    .pentagon{
+        position: absolute;
+       // width: 45%;
+        align-self: center;
+        margin-top: 4.375rem;
+    }
+
+    .items{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+     
+
+        .icon{
+            height: 150px;
+            width: 150px;
+           // border: 18px solid;
+            //border-radius: 50%;
+            transition: transform .2s;
+
+            &--paper{
+                @include icon($imageP,$paper-gradient);
+                transform: translateX(8rem)translateY(6rem);
+                
+                &:hover{
+                transform: translateX(8.5rem)translateY(6rem) ;
+
+                }
+
+            }
+            &--scissors{
+                @include icon($imageS,$scissors-gradient);
+                transform: translateX(9rem)translateY(-1rem);
+
+                &:hover{
+                    transform: translateX(9rem)translateY(-0.5rem) ;
+
+
+                }
+            }
+            &--rock{
+                @include icon($imageR,$rock-gradient);
+                transform: translateX(-7rem) translateY(20rem);
+            
+
+                &:hover{
+                    transform: translateX(-6.5rem) translateY(19.5rem);
+
+                }
+            
+            }
+            &--lizard{
+                @include icon($imageL,$rock-gradient);
+                transform: translateX(2rem) translateY(6rem);
+            
+
+                &:hover{
+                    transform: translateX(1.5rem) translateY(6rem);
+
+                }
+            
+            }
+            &--spock{
+                @include icon($imageSp,$rock-gradient);
+                transform: translateX(-10rem) translateY(20rem);
+            
+
+                &:hover{
+                    transform: translateX(-10.5rem) translateY(19.5rem);
+
+                }
+            
+            }
+        }
+    }
+
+
+   
+}
+
+
+@media(max-width:300px){
+
+    
+.play{
+
+    width: 100%;
+    position: relative;
+    margin-top: 15.125rem;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+
+    .pentagon{
+        position: absolute;
+       // width: 45%;
+        align-self: center;
+        margin-top: 4.375rem;
+    }
+
+    .items{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+     
+
+        .icon{
+            height: 150px;
+            width: 150px;
+           // border: 18px solid;
+            //border-radius: 50%;
+            transition: transform .2s;
+
+            &--paper{
+                @include icon($imageP,$paper-gradient);
+                transform: translateX(8rem)translateY(6rem);
+                
+                &:hover{
+                transform: translateX(8.5rem)translateY(6rem) ;
+
+                }
+
+            }
+            &--scissors{
+                @include icon($imageS,$scissors-gradient);
+                transform: translateX(9rem)translateY(-1rem);
+
+                &:hover{
+                    transform: translateX(9rem)translateY(-0.5rem) ;
+
+
+                }
+            }
+            &--rock{
+                @include icon($imageR,$rock-gradient);
+                transform: translateX(-7rem) translateY(20rem);
+            
+
+                &:hover{
+                    transform: translateX(-6.5rem) translateY(19.5rem);
+
+                }
+            
+            }
+            &--lizard{
+                @include icon($imageL,$rock-gradient);
+                transform: translateX(2rem) translateY(6rem);
+            
+
+                &:hover{
+                    transform: translateX(1.5rem) translateY(6rem);
+
+                }
+            
+            }
+            &--spock{
+                @include icon($imageSp,$rock-gradient);
+                transform: translateX(-10rem) translateY(20rem);
+            
+
+                &:hover{
+                    transform: translateX(-10.5rem) translateY(19.5rem);
+
+                }
+            
+            }
+        }
+    }
+
+
+   
+}
+
+}

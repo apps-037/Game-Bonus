@@ -1,0 +1,99 @@
+.header{
+    display:block;
+    // border: 3px solid $header-outline;
+    max-width: 100.75rem;
+    width: 100%;
+    height: 1px;
+    margin-top: 0.875rem;
+ 
+    padding: 1.25rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    .text{
+        font-size: 1.5rem;
+        padding: 0px;
+
+       // border-radius: 1rem;
+        width: 100%;
+        //  border: 3px solid $header-outline;
+        text-transform: uppercase;
+      //  word-spacing: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 2rem;
+    }
+    img .sci{
+        color: white;
+        white-space: 1rem;
+    }
+
+    .score-box{
+        padding: .75rem 2.5rem;
+        background-color: #fff;
+        color: $score-text;
+        border-radius: 5px;
+        font-size: 20px;
+        height: fit-content;
+
+        &__score{
+            color: $dark-text;
+            font-size: 4.5rem;
+            font-weight: 700;
+        }
+
+    }
+}
+
+@media (max-width: 300px ){
+
+    .header{
+        // border: 3px solid $header-outline;
+        max-width: 100.75rem;
+        width: 100%;
+        margin-top: 0.875rem;
+     
+        padding: 1.25rem;
+    
+        display: flex;
+        justify-content: space-between;
+    
+        .text{
+            font-size: 0.5rem;
+            padding: 0px;
+    
+           // border-radius: 1rem;
+            width: 100%;
+            //  border: 3px solid $header-outline;
+            text-transform: uppercase;
+          //  word-spacing: 1rem;
+            display: inline;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 2rem;
+        }
+        img .sci{
+            color: white;
+            white-space: 1rem;
+        }
+    
+        .score-box{
+            padding: .75rem 2.5rem;
+            background-color: #fff;
+            color: $score-text;
+            border-radius: 5px;
+            font-size: 20px;
+            height: fit-content;
+    
+            &__score{
+                color: $dark-text;
+                font-size: 4.5rem;
+                font-weight: 700;
+            }
+    
+        }
+    }
+
+}

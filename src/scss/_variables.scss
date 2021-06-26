@@ -1,0 +1,26 @@
+//colors
+
+$scissors-gradient: hsl(0, 3%, 57%);
+$paper-gradient: hsl(0, 0%, 75%);
+$rock-gradient: hsl(0, 0%, 61%);
+
+
+//text
+
+$dark-text: hsl(229, 25%, 31%);
+$score-text: hsl(229, 64%, 46%);
+$header-outline: hsl(0, 0%, 0%);
+
+//Background
+$background-gradient: radial-gradient(circle, hsla(30, 100%, 60%, 0.973),
+hsl(30,100%,60%)
+);
+
+
+//Images
+
+$imageP:"../src/img/paper.png";
+$imageS:"../src/img/scissors.png";
+$imageR:"../src/img/stone.png";
+$imageL:"../src/img/lizard.png";
+$imageSp:"../src/img/spock.png";
